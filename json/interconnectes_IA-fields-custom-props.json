@@ -19,9 +19,8 @@
     },
     {
       "name": "projet_status",
-      "subtype": "tags",
-      "bgColor": "#00adb8",
-      "separator": ","
+      "subtype": "tag",
+      "bgColor": "#00adb8"
     },
     {
       "name": "status_abandon"
@@ -40,10 +39,25 @@
       "name": "usage_service"
     },
     {
+      "name": "financement"
+    },
+    {
+      "name": "budget",
+      "subtype": "tag",
+      "bgColor": "#00adb8"
+    },
+    {
+      "name": "usage_description"
+    },
+    {
+      "name": "mise_en_oeuvre",
+      "subtype": "tag",
+      "bgColor": "#00adb8"
+    },
+    {
       "name": "theme",
-      "subtype": "tags",
-      "bgColor": "#00adb8",
-      "separator": ","
+      "subtype": "tag",
+      "bgColor": "#00adb8"
     },
     {
       "name": "sous_theme",
@@ -51,8 +65,44 @@
       "bgColor": "#00adb8",
       "separator": ","
     },
+
     {
-      "name": "cible_service",
+      "name": "audience_service",
+      "subtype": "tags",
+      "bgColor": "#00adb8",
+      "separator": ","
+    },
+    {
+      "name": "herbergement",
+      "subtype": "tag",
+      "bgColor": "#00adb8"
+    },
+    {
+      "name": "nom_algorithme"
+    },
+    {
+      "name": "algorithme_description"
+    },
+    {
+      "name": "algorithme_operations"
+    },
+    {
+      "name": "type_algorithme",
+      "subtype": "tags",
+      "bgColor": "#00adb8",
+      "separator": ","
+    },
+    {
+      "name": "impact_environnement"
+    },
+    {
+      "name": "donnees_source",
+      "subtype": "tags",
+      "bgColor": "#00adb8",
+      "separator": ","
+    },
+    {
+      "name": "donnees_acces",
       "subtype": "tags",
       "bgColor": "#00adb8",
       "separator": ","
@@ -62,9 +112,8 @@
     },
     {
       "name": "risque_categorie",
-      "subtype": "tags",
-      "bgColor": "#00adb8",
-      "separator": ","
+      "subtype": "tag",
+      "bgColor": "#00adb8"
     },
     {
       "name": "proportionalite"
@@ -73,48 +122,22 @@
       "name": "decision"
     },
     {
-      "name": "audience_decision"
-    },
-    {
-      "name": "herbergement"
-    },
-    {
-      "name": "nom_algorithme"
-    },
-    {
-      "name": "description"
-    },
-    {
-      "name": "usage_algorithme"
-    },
-    {
-      "name": "impact_algorithme"
-    },
-    {
-      "name": "automatisation_decision",
+      "name": "erreur",
       "subtype": "tag",
       "bgColor": "#00adb8"
     },
     {
-      "name": "operations"
-    },
-    {
-      "name": "type_algorithme",
+      "name": "explicabilite",
       "subtype": "tag",
       "bgColor": "#00adb8"
     },
-    {
-      "name": "donnees_source"
-    },
-    {
-      "name": "donnees_collecte"
-    },
-    {
-      "name": "monitoring_biais"
-    },
-    {
-      "name": "monitoring_impact"
-    },
+
+
+
+
+
+
+    
     {
       "name": "reversibilite"
     },

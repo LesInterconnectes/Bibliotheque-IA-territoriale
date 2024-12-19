@@ -43,8 +43,10 @@
             "title": "Bibliothèque IA",
             "activate": true,
             "localdev": false,
-            "gitfilelocal": "http://localhost:8810/statics/csv/202411-bibIA-testBDD.csv",
-            "gitfile": "https://github.com/LesInterconnectes/Bibliotheque-IA-territoriale/blob/main/csv/202411-bibIA-testBDD.csv",
+            "DEPRECATED_gitfilelocal": "http://localhost:8810/statics/csv/202411-bibIA-testBDD.csv",
+            "gitfilelocal": "http://localhost:8810/statics/csv/bdd-beta-bibIA.csv",
+            "DEPRECATED_gitfile": "https://github.com/LesInterconnectes/Bibliotheque-IA-territoriale/blob/main/csv/202411-bibIA-testBDD.csv",
+            "gitfile": "https://github.com/LesInterconnectes/Bibliotheque-IA-territoriale/blob/main/csv/bdd-beta-bibIA.csv",
             "default-tab": true,
             "options": {
               "height": "600px",
@@ -66,7 +68,7 @@
                     "filtering": "OR"
                   },
                   {
-                    "name": "cible_service",
+                    "name": "audience_service",
                     "filtering": "OR"
                   }
                 ]
@@ -113,10 +115,10 @@
                   "coll_nom": {
                     "position": "adress"
                   },
-                  "description": {
+                  "algorithme_description": {
                     "position": "resume"
-                    },
-                  "usage_service": {
+                  },
+                  "usage_description": {
                     "position": "infos"
                   },
                   "coll_type": {
@@ -127,9 +129,9 @@
                     "position": "tags",
                     "prefix": "Politique publique visée"
                   },
-                  "cible_service": {
+                  "audience_service": {
                     "position": "tags",
-                    "prefix": "Cible du service"
+                    "prefix": "Audience du service"
                   },
                   "risque_categorie": {
                     "position": "tags",
@@ -151,21 +153,16 @@
                     "position": "adress",
                     "prefix": "SIREN: "
                   },
-                  "usage_service": {
+                  "usage_description": {
                     "position": "subtitle"
                   },
-                  "description": {
+                  "algorithme_description": {
                     "position": "resume",
                     "block_title": "Description"
                   },
                   "projet_contact": {
                     "position": "links",
                     "block_title": "Contact"
-                  },
-                  "audience_decision": {
-                    "position": "resume",
-                    "block_title": "Public concerné par la décision",
-                    "right": false
                   },
                   "partenaires": {
                     "position": "resume",
@@ -186,28 +183,18 @@
                     "block_title":  "Maturité",
                     "right": true
                   },
-                  "usage_service": {
+                  "usage_description": {
                     "position": "infos",
                     "block_title": "Description gobal du service et de ses usages"
-                  },
-                  "usage_algorithme": {
-                    "position": "infos",
-                    "block_title": "Finalité de l&#39algorithme",
-                    "right": false
-                  },
-                  "impact_algorithme": {
-                    "position": "infos",
-                    "block_title": "Impact de l&#39algorithme sur la décision",
-                    "right": false
                   },
                   "coll_type": {
                     "position": "tags_top",
                     "block_title": "Type de collectivité",
                     "right": false
                   },
-                  "cible_service": {
+                  "audience_service": {
                     "position": "tags_top",
-                    "block_title": "Cible du service",
+                    "block_title": "Audience du service",
                     "right": false
                   },
                   "risque": {
@@ -223,16 +210,6 @@
                   "decision": {
                     "position": "resume",
                     "block_title": "Portée de la décision",
-                    "right": true
-                  },
-                  "monitoring_biais": {
-                    "position": "resume",
-                    "block_title": "Biais de traitement",
-                    "right": true
-                  },
-                  "monitoring_impact": {
-                    "position": "resume",
-                    "block_title":"Evaluation de l&#39impact social et environnemental",
                     "right": true
                   },
                   "reversibilite": {
@@ -258,11 +235,6 @@
                   "risque_categorie": {
                     "position": "tags",
                     "block_title": "Type de risque",
-                    "right": true
-                  },
-                  "automatisation_decision": {
-                    "position": "tags",
-                    "block_title": "Niveau d’automatisation de la décision",
                     "right": true
                   },
                   "type_algorithme": {
