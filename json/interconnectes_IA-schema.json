@@ -33,7 +33,15 @@
       "description": "Commune, EPCI, département, région, syndicat mixte, opérateur",
       "type": "string",
       "constraints": {
-        "required": true
+        "required": true,
+        "enum": [
+          "Commune",
+          "EPCI",
+          "département",
+          "région",
+          "syndicat mixte",
+          "opérateur"
+        ]
       }
     },
     {
@@ -51,7 +59,13 @@
       "description": "Sélectionner un item : en réflexion, en construction, POC, en déploiement, terminée, abandonné",
       "type": "string",
       "constraints": {
-        "required": true
+        "required": true,
+        "enum": [
+          "En expérimentation",
+          "En déploiement",
+          "Terminée", 
+          "Abandonné"
+        ]
       }
     },
     {
@@ -66,7 +80,7 @@
       "description": "Liste des autres partenaires académiques, experts, techniques, financeurs associés",
       "type": "string",
       "constraints": {
-        "required": true
+        "required": false
       }
     },
     {
@@ -79,8 +93,27 @@
       }
     },
     {
-      "name": "usage_service",
-      "title": "Description gobal du service et de ses usages",
+      "name" : "financement",
+      "title" : "Financement",
+      "description" : "Identifier le guichet de financement (interne, Fond vert, CRTE, France 2030, FEDER, DIAT, …)",
+      "type" : "string"
+    },
+    {
+      "name" : "budget",
+      "title" : "Budget",
+      "description" : "/an : moins de 50k€ , de 50k€ à 100k€,  plus de 100k€",
+      "type" : "string",
+      "constraints" : { 
+        "enum" : [ 
+          "moins de 50k€" , 
+          "de 50k€ à 100k€", 
+          "plus de 100k€"
+        ]
+      }
+    },
+    {
+      "name": "usage_description",
+      "title": "Description gobale du service et de ses usages",
       "description": "A quoi sert ce service ? Quels bénéfices attendus ? ",
       "type": "string",
       "constraints": {
@@ -88,12 +121,36 @@
       }
     },
     {
-      "name": "theme",
-      "title": "Politique publique visée",
-      "description": "quelle grande politique publique est adressée par ce cas d'usages (voir thèmes BDT)",
-      "type": "string",
-      "constraints": {
-        "required": true
+      "name" : "mise_en_oeuvre",
+      "title" : "Développement et mise en œuvre",
+      "description" : "Projet développé en interne, projet développé en externe, mobilisation de prestataire(s), marché public",
+      "type" : "string",
+      "constraints" : { 
+        "required" : true,
+        "enum" : [
+          "Projet développé en interne",
+          "projet développé en externe",
+          "mobilisation de prestataire(s)", 
+          "marché public"
+        ]
+      }
+    },
+    {
+      "name" : "theme",
+      "title" : "Thème principal ",
+      "description" : "quelle grande politique publique est adressée par ce cas d'usages (voir thèmes feuille2)",
+      "type" : "string",
+      "constraints" : { 
+        "required" : true,
+        "enum" : [ 
+          "Transition écologique et énergétique",
+          "Attractivité et développement",
+          "Citoyenneté", 
+          "Santé et solidarité",
+          "Mobilités",
+          "Gouvernance et socles technologiques",
+          "Administration et organisation interne"
+        ]
       }
     },
     {
@@ -102,15 +159,119 @@
       "description": "sélectionner un ou deux items dans la liste proposée (voir sous-thèmes BDT)",
       "type": "string",
       "constraints": {
+        "enum": []
       }
     },
     {
-      "name": "cible_service",
-      "title": "Cible du service",
+      "name": "audience_service",
+      "title": "Audience du service",
       "description": "grand public, bénéficiaire, agent, association, élu, entreprises, collectivités, établissement scolaire, établissement santé",
       "type": "string",
       "constraints": {
+        "required": true,
+        "enum": [
+          "grand public", 
+          "bénéficiaire", 
+          "agent", 
+          "association", 
+          "élu", 
+          "entreprises", 
+          "collectivités", 
+          "établissement scolaire", 
+          "établissement santé"
+        ]
+      }
+    },
+    {
+      "name": "herbergement",
+      "title": "Hébergement du service",
+      "description": "Indiquez comment sont hébergée les données : cloud chez un tiers, en interne de l'administration",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "cloud chez un tiers", 
+          "en interne de l'administration", 
+          "NSP"
+        ]
+      }
+    },
+    {
+      "name": "nom_algorithme",
+      "title": "Nom de l’algorithme",
+      "description": "S’il n’en a pas, indiquer la décision mise en oeuvre. Exemple : réservation et accès crèche.",
+      "type": "string",
+      "constraints": {
         "required": true
+      }
+    },
+    {
+      "name": "algorithme_description",
+      "title": "Description gobal de l'algorithme",
+      "description": "À quoi sert cet algorithme ? Quelles sont les tâches à accomplir?",
+      "type": "string",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name" : "algorithme_operations",
+      "title" : "Opérations effectuées par l’algorithme",
+      "description" : "Donnez des détails sur les opérations techniques effectuées par l’algorithme. Cette catégorie peut être simple ou complexe, en fonction du type d’algorithme mobilisé.",
+      "type" : "string"
+    },
+    {
+      "name": "type_algorithme",
+      "title": "Type d'algorithme",
+      "description": "Machine Learning, Traitement Automatique du langage, IA générative, Computer vision, Réseaux de neurones",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "Machine Learning", 
+          "Traitement Automatique du langage", 
+          "IA générative", 
+          "Computer vision", 
+          "Réseaux de neurones", 
+          "NSP"
+        ]
+      }
+    },
+    {
+      "name" : "impact_environnement",
+      "title" : "Evaluation de l'impact environnemental",
+      "description" : "Indiquez le score ou impact environnemental de l'algorithme (GreenAlgorithm)",
+      "type" : "string"
+    },
+    {
+      "name" : "donnees_source",
+      "title" : "Source des données",
+      "description" : "Qui fournit les données nécessaires à l'entraîment et à l'utilisation du modèle (l’usager, jeu de données interne, open data, données d'un tiers , NSP) ?",
+      "type" : "string",
+      "constraints" : { 
+        "required" : true,
+        "enum" : [ 
+          "usager", 
+          "jeu de données interne", 
+          "open data", 
+          "données d'un tiers", 
+          "NSP"
+        ] 
+      }
+    },
+    {
+      "name": "donnees_acces",
+      "title": "Mode de collecte des données traitées",
+      "description": "Comment les données sont‑elles initialement collectées et mise à jour ? Exemple : “par API, automatisée, par récupération manuelle, NSP”.",
+      "type": "string",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "par API", 
+          "automatisée", 
+          "par récupération manuelle", 
+          "NSP"
+        ]
       }
     },
     {
@@ -125,8 +286,13 @@
       "description": "Classification de la catégorie de risque pour cette utilisation de l'algorithme",
       "type": "string",
       "constraints": {
-        "required": true,
-        "enum": []
+        "required": false,
+        "enum": [
+          "risque minimal",
+          "risque limité",
+          "risque élevé",
+          "inacceptable"
+        ]
       }
     },
     {
@@ -136,117 +302,35 @@
       "type": "string"
     },
     {
-      "name": "decision",
-      "title": "Portée de la décision",
-      "description": "Préciser si la décision a une portée externe (par exemple : pour un usager) ou concerne une procédure interne (par exemple : traitement de la mobilité des agents). Voir nombre de décisions",
-      "type": "string",
-      "constraints": {
-        "required": true
+      "name" : "decision",
+      "title" : "Portée de la décision",
+      "description" : "Préciser si la décision a une portée externe (par exemple : pour un usager) ou concerne une procédure interne (par exemple : traitement de la mobilité des agents). Voir nombre de décisions",
+      "type" : "string"
+    },
+    {
+      "name" : "erreur",
+      "title" : "Efficacité du système d'IA",
+      "description" : "Ecart entre les objectifs attendus et les résultats du système d’IA - (faible) le système d’IA répond bien aux objectifs attendus - (moyen) le système d’IA répond partiellement aux objectifs attendus - (fort) le système d’IA ne répond pas aux objectifs attendus",
+      "type" : "string",
+      "constraints" : { 
+        "enum" : [ 
+          "faible", 
+          "moyen", 
+          "fort"
+        ] 
       }
     },
     {
-      "name": "audience_decision",
-      "title": "Public concerné par la décision",
-      "description": "Qui est affecté par cette décision ? Est‑ce que la décision emporte des effets importants sur ce public ?",
-      "type": "string"
-    },
-    {
-      "name": "herbergement",
-      "title": "Hébergement du service",
-      "description": "Indiquez comment sont hébergée les données : cloud chez un tiers, en interne de l'administration",
-      "type": "string",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
-      "name": "nom_algorithme",
-      "title": "Nom de l’algorithme",
-      "description": "S’il n’en a pas, indiquer la décision mise en oeuvre. Exemple : réservation et accès crèche.",
-      "type": "string",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
-      "name": "description",
-      "title": "Description gobal de l'algorithme",
-      "description": "Pourquoi une décision administrative est‑elle prise? Qui sont les acteurs de la décision? Quelles sont les tâches à accomplir?",
-      "type": "string",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
-      "name": "usage_algorithme",
-      "title": "Finalité de l'algorithme",
-      "description": "À quoi sert cet algorithme?  Cette catégorie peut également comporter des éléments dejustification : pourquoi un algorithme a‑t‑il été utilisé dans ce processus?",
-      "type": "string",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
-      "name": "impact_algorithme",
-      "title": "Impact de l'algorithme sur la décision",
-      "description": "Pour effectuer lesdites tâches, à quel moment s’insère l’algorithme dans le processus de décision ? Quel est le processus complet et quelle(s) partie(s) l’algorithme prend‑il en charge ?",
-      "type": "string"
-    },
-    {
-      "name": "automatisation_decision",
-      "title": "Niveau d’automatisation de la décision",
-      "description": "Préciser si la décision est entièrement automatisée ou s’il s’agit d’un outil d’aide à la décision; automatisation complète, assistée, aide à la décision)",
-      "type": "string",
-      "constraints": {
-        "enum": []
-      }
-    },
-    {
-      "name": "operations",
-      "title": "Opérations effectuées par l’algorithme",
-      "description": "Donnez des détails sur les opérations techniques effectuées par l’algorithme. Cette catégorie peut être simple ou complexe, en fonction du type d’algorithme mobilisé.",
-      "type": "string"
-    },
-    {
-      "name": "type_algorithme",
-      "title": "Type d'algorithme",
-      "description": "Machine Learning, Traitement Automatique du langage, IA générative, Computer vision, Réseaux de neurones",
-      "type": "string",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
-      "name": "donnees_source",
-      "title": "Source des données",
-      "description": "Qui fournit les données (l’usager, une autre administration, etc.)? Comment sont elles fournies (un dossier, une API, etc.)? Exemple : “dossier rempli par le demandeur sur une plateforme en ligne” ou “revenu fiscal de référence fourni par la DGFIP”.",
-      "type": "string",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
-      "name": "donnees_collecte",
-      "title": "Mode de collecte des données traitées",
-      "description": "Comment les données sont‑elles initialement collectées ? Exemple : “Les inscriptions sont très majoritairement prises en charge au sein d’un portail virtuel dédié aux familles, plus exceptionnellement par voie papier”.",
-      "type": "string",
-      "constraints": {
-        "required": true
-      }
-    },
-    {
-      "name": "monitoring_biais",
-      "title": "Biais de traitement",
-      "description": "Indiquez si les données mobilisées comportent des biais  et si des procédures sont déployées pour les compenser",
-      "type": "string"
-    },
-    {
-      "name": "monitoring_impact",
-      "title": "Evaluation de l'impact social et environnemental",
-      "description": "Indiquez le score ou impact environnemental de l'algorithm (GreenAlgorithm) et social du service et quels mesures sont déployées pour les compenser (comité de surveillance, etc.)",
-      "type": "string",
-      "constraints": {
-        "required": true
+      "name" : "explicabilite",
+      "title" : "Niveau d’explicabilité de l’algorithme",
+      "description" : "1- (faible) Facilement explicable au public - (moyen) Explicable mais complexe - (fort) Non explicable au public ",
+      "type" : "string",
+      "constraints" : { 
+        "enum" : [ 
+          "faible", 
+          "moyen", 
+          "fort"
+        ] 
       }
     },
     {
