@@ -1,21 +1,21 @@
 #### CHAMPS PUBLICS
 
 - coll_nom
-- nom_projet
-- coll_siret
-- coll_type
-- projet_date
-- projet_status
+- Nom_du_projet
+- SIRET
+- Type_de_collectivite
+- Date_de_derniere_mise_a_jour_de_demarrage
+- Statut_du_projet
 - status_abandon
-- partenaires
-- usage_description
+- Partenaires
+- Description_service
 - mise_en_oeuvre
-- theme
-- sous_theme
-- audience_service
-- url_infos
-- image_url
-- date
+- Theme
+- Sous_Theme
+- Audience
+- URL_Service
+- URL_Logo
+- Date_de_derniere_mise_a_jour
 
 ### CHAMPS RESTREINTS
 
@@ -58,7 +58,7 @@ Un travail collectif, regroupant l’Ecolab du CGDD et la Banque des Territoires
 
 Un premier cahier des charges a été produit en 2023 pour anticiper les usages types et les rôles nécessaires au maintien de cette bibliothèque. Ensemble, nous avons ainsi élaboré au dernier trimestre 2024 un modèle de données visant à structurer la documentation des projets ayant recours à l’IA.
 
-Pour nourrir ce travail, nous avons croisé plusieurs travaux réglementaires mais aussi de recensement de projets d’IA territoriales que nous avons identifiés en France mais aussi à l’international. Aussi, dans une logique de convergence entre les ressources existantes, nous avons pris soin de reprendre des nomenclatures déjà utilisées par nos partenaires, à l’instar des critères d’identification des thèmes de cas d’usages notamment. 
+Pour nourrir ce travail, nous avons croisé plusieurs travaux réglementaires mais aussi de recensement de projets d’IA territoriales que nous avons identifiés en France mais aussi à l’international. Aussi, dans une logique de convergence entre les ressources existantes, nous avons pris soin de reprendre des nomenclatures déjà utilisées par nos Partenaires, à l’instar des critères d’identification des thèmes de cas d’usages notamment. 
 
 Les cas d’usages documentés s’articulent autour de 6 thématiques principales. 
 
