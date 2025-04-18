@@ -3,6 +3,9 @@ name: Fetch Grist CSV and Commit
 on:
   workflow_dispatch: # Manually triggered
 
+permissions:
+  contents: write
+
 jobs:
   fetch-and-commit:
     runs-on: ubuntu-latest
