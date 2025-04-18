@@ -1,15 +1,13 @@
 #### CHAMPS PUBLICS
 
-- coll_nom
+- Nom_collectivite
 - Nom_du_projet
 - SIRET
 - Type_de_collectivite
 - Date_de_derniere_mise_a_jour_de_demarrage
 - Statut_du_projet
-- status_abandon
 - Partenaires
 - Description_service
-- mise_en_oeuvre
 - Theme
 - Sous_Theme
 - Audience
@@ -17,22 +15,11 @@
 - URL_Logo
 - Date_de_derniere_mise_a_jour
 
-### CHAMPS RESTREINTS
-
-- projet_contact
-- financement
-- budget
-- herbergement
-- nom_algorithme
-- algorithme_description
-- algorithme_operations
-- type_algorithme
-- impact_environnement
-- donnees_source
-- donnees_acces
-- url_ressources
-
-Face à l’accélération des usages de l’IA et la diffusion massive de ces outils dans la vie publique, la commission numérique commune aux Interconnectés*, France urbaine et Intercommunalités de France s’est engagée en juillet 2023 à déployer la stratégie des « Intelligences Associées des territoires ». Elle vise à inscrire l’IA dans les exigences d’un numérique responsable.
+Face à l’accélération des usages de l’IA et la diffusion massive de ces outils 
+dans la vie publique, la commission numérique commune aux Interconnectés*, 
+France urbaine et Intercommunalités de France s’est engagée en juillet 2023 à 
+déployer la stratégie des « Intelligences Associées des territoires ». Elle 
+vise à inscrire l’IA dans les exigences d’un numérique responsable.
 
 Trois orientations complémentaires sont alors développées. 
 
