@@ -20,24 +20,24 @@ Nantes Métropole,VIAIre - Inventaire et gestion des données patrimoniales de l
 Ville de Paris,Expérimentation IA avec le relevé de dégradations pour la GMAO de voirie,21750001600019,48.8566140,2.3333330,Département,05/2024,En expérimentation,"CEREMA, Immergis","Disposer d’un relevé de dégradations objectif de l’ensemble des dégradations sur chaussée (1600 km de chaussées)
 Notation des chaussées en fonction de leur degré de dégradation et aide à la décision pour la programmation de travaux pluri-annuelle
 ",Mobilités,Logistique urbaine,Grand public,,https://upload.wikimedia.org/wikipedia/fr/thumb/f/fd/Ville_de_Paris_logo_2019.svg/1200px-Ville_de_Paris_logo_2019.svg.png,16/04/2025
-CA SICOVAL,"Expérimentation IA
-pour la détection
-des fuites d'eau ",24310063300391,43.5436822,1.5055132,EPCI,05/2024,En déploiement,Leakmited,"identifier les  20 à 30 % du réseau qui concentrent 80 % du potentiel de fuites à travers l'application
-d'algorythmes entraînés sur 1  millions de fuites d'eau sur notre SIG (historique des fuites et caractéritiques du réseau).
+CA SICOVAL,"Expérimentation IA 
+pour la détection 
+des fuites d'eau ",24310063300391,43.5436822,1.5055132,EPCI,05/2024,En déploiement,Leakmited,"identifier les  20 à 30 % du réseau qui concentrent 80 % du potentiel de fuites à travers l'application 
+d'algorythmes entraînés sur 1  millions de fuites d'eau sur notre SIG (historique des fuites et caractéritiques du réseau). 
 Aide à la décision sur la programmation des travaux et efficience des interventions ciblées.",Transition écologique et énergétique,Gestion de l’eau,Collectivités,https://www.leakmited.com/,https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_Sicoval.png,16/04/2025
 CA SICOVAL,"Expérimentation
-assistance rédactionnelle",24310063300391,43.5436822,1.5055132,EPCI,10/2024,En expérimentation,Délibia,"Accompagner la rédaction adminstrative des agents du Sicoval et de ses 36 communes membres
+assistance rédactionnelle",24310063300391,43.5436822,1.5055132,EPCI,10/2024,En expérimentation,Délibia,"Accompagner la rédaction adminstrative des agents du Sicoval et de ses 36 communes membres 
 (300 personnes en cours d'expé)
 Une meilleure performance et qualité dans le rendu des écrits, un gain de temps dans la recherche d'informations,
 sensibiliser à la pratique de l'IA avec des outils souverains et éthiques.",Administration et organisation interne,Aide à la rédaction et gestion documentaire,Agent,https://delibia.fr/,https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_Sicoval.png,16/04/2025
 "CA DE BETHUNE-BRUAY, ARTOIS LYS ROMANE",Expérimentation d’une solution d’analyse et de gestion des routes par intelligence artificielle,20007246000013,50.5162818,2.6267038,EPCI,02/2025,En expérimentation,/,"Il s’agit d’analyser l’état des routes grâce à un smartphone qui prend automatiquement une photo tous les 4 mètres. Les images sont récoltées et analysées afin de détecter les dommages. Cela permet de réaliser une évaluation de l’état des routes (comprenant aussi les panneaux de signalisation, plaques d’égouts et avaloirs) et de planifier les interventions tout en optimisant la programmation et les opérations d’entretiens grâce à des évaluations budgétaires.",Administration et organisation interne,"Construction et aménagement, Outillage système d’information","Agent, Élu",https://www.vialytics.fr/,https://upload.wikimedia.org/wikipedia/fr/thumb/1/16/CA_B%C3%A9thune-Bruay%2C_Artois-Lys_Romane_logo_2017.svg/700px-CA_B%C3%A9thune-Bruay%2C_Artois-Lys_Romane_logo_2017.svg.png,16/04/2025
-Métropole de Lyon,IMMERSION IA,20004697700019,45.7580929,4.8544000,Métropole,04/2024,En déploiement,"Université de Lyon, Datactivist, Tuba ","Dans un contexte de forte accélération technique, politique, médiatique de l’Intelligence artificielle, ce kit ouvert propose une expérience apprenante pour les acteurs d’intérêt généraux afin de plonger dans la complexité et l’ambivalence de ce sujet évolutif, incertain et à fort potentiel de transformation.
+Métropole de Lyon,IMMERSION IA,20004697700019,45.7580929,4.8544000,Métropole,04/2024,En déploiement,"Université de Lyon, Datactivist, Tuba ","Dans un contexte de forte accélération technique, politique, médiatique de l’Intelligence artificielle, ce kit ouvert propose une expérience apprenante pour les acteurs d’intérêt généraux afin de plonger dans la complexité et l’ambivalence de ce sujet évolutif, incertain et à fort potentiel de transformation. 
 Destinée à des groupes de 10 à 100 personnes, l'expérience vise à sensibiliser, développer des compétences pratiques et stratégiques de base, mais aussi une culture collective indispensable aux expérimentations.
 Accessible et utilisable par toutes les organisations dans le cadre de la licence CCBySa",Gouvernance et socles technologiques,"Gestion des ressources humaines, Gouvernance et stratégie numérique responsable","Agent, Élu, Collectivités",https://erasme.notion.site/Kit-p-dagogique-IMMERSION-IA-cfc1d38fed704c4caebd66272b8d4d78?pvs=74,https://www.grandlyon.com/typo3conf/ext/gl_metropole_template/Resources/Public/Images/Content/logo-grand-lyon-la-metropole.svg,16/04/2025
-Métropole de Lyon,PRECI : prévention automatisée des conflits d'intérêt,20004697700019,45.7580929,4.8544000,Métropole,04/2024,Terminé,Exo-Dev,"Les objectifs du projet sont les suivants :
+Métropole de Lyon,PRECI : prévention automatisée des conflits d'intérêt,20004697700019,45.7580929,4.8544000,Métropole,04/2024,Terminé,Exo-Dev,"Les objectifs du projet sont les suivants : 
 Tester la possibilité d’automatiser des parties du processus de détection des risques de conflits d’intérêts :
-- Identification des structures désignées au sein des délibérations
-- Matching avec le tableau des élus et structures associées
+- Identification des structures désignées au sein des délibérations 
+- Matching avec le tableau des élus et structures associées 
 - Création automatisée de mail à l’attention des élus
 - Génération d’un document récapitulatif des situations potentielles de conflits d’intérêts par séance avec l’explication du conflit
 Étudier l’impact de cette automatisation sur les processus, les agents, la direction adjointe :  impacts organisationnels, RH
