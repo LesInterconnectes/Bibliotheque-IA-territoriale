@@ -1,0 +1,41 @@
+name: Fetch Grist CSV and Commit
+
+on:
+  workflow_dispatch: # Manually triggered
+
+jobs:
+  fetch-and-commit:
+    runs-on: ubuntu-latest
+    environment: default
+
+    env:
+      OUTPUT_FILE: "csv/data.csv"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch CSV from Grist
+        run: |
+          GRIST_DOC_ID="nEtrfhyp7uc6"
+          GRIST_TABLE_ID="Donnees_bibliotheque_IA"
+          GRIST_VIEW_SECTION="4"
+
+          curl -s -H "Authorization: Bearer ${{ secrets.GRIST_API_KEY }}" \
+            "https://api.getgrist.com/o/interconnectes/api/docs/$GRIST_DOC_ID/download/csv?viewSection=$GRIST_VIEW_SECTION&tableId=GRIST_TABLE_ID&header=colId" \
+            -o "$OUTPUT_FILE"
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push if changed
+        run: |
+          git add "$OUTPUT_FILE"
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update data"
+            git push
+          fi

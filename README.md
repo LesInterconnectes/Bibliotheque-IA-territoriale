@@ -1,38 +1,25 @@
 #### CHAMPS PUBLICS
 
-- coll_nom
-- nom_projet
-- coll_siret
-- coll_type
-- projet_date
-- projet_status
-- status_abandon
-- partenaires
-- usage_description
-- mise_en_oeuvre
-- theme
-- sous_theme
-- audience_service
-- url_infos
-- image_url
-- date
+- Nom_collectivite
+- Nom_du_projet
+- SIRET
+- Type_de_collectivite
+- Date_de_derniere_mise_a_jour_de_demarrage
+- Statut_du_projet
+- Partenaires
+- Description_service
+- Theme
+- Sous_Theme
+- Audience
+- URL_Service
+- URL_Logo
+- Date_de_derniere_mise_a_jour
 
-### CHAMPS RESTREINTS
-
-- projet_contact
-- financement
-- budget
-- herbergement
-- nom_algorithme
-- algorithme_description
-- algorithme_operations
-- type_algorithme
-- impact_environnement
-- donnees_source
-- donnees_acces
-- url_ressources
-
-Face à l’accélération des usages de l’IA et la diffusion massive de ces outils dans la vie publique, la commission numérique commune aux Interconnectés*, France urbaine et Intercommunalités de France s’est engagée en juillet 2023 à déployer la stratégie des « Intelligences Associées des territoires ». Elle vise à inscrire l’IA dans les exigences d’un numérique responsable.
+Face à l’accélération des usages de l’IA et la diffusion massive de ces outils 
+dans la vie publique, la commission numérique commune aux Interconnectés*, 
+France urbaine et Intercommunalités de France s’est engagée en juillet 2023 à 
+déployer la stratégie des « Intelligences Associées des territoires ». Elle 
+vise à inscrire l’IA dans les exigences d’un numérique responsable.
 
 Trois orientations complémentaires sont alors développées. 
 
@@ -58,7 +45,7 @@ Un travail collectif, regroupant l’Ecolab du CGDD et la Banque des Territoires
 
 Un premier cahier des charges a été produit en 2023 pour anticiper les usages types et les rôles nécessaires au maintien de cette bibliothèque. Ensemble, nous avons ainsi élaboré au dernier trimestre 2024 un modèle de données visant à structurer la documentation des projets ayant recours à l’IA.
 
-Pour nourrir ce travail, nous avons croisé plusieurs travaux réglementaires mais aussi de recensement de projets d’IA territoriales que nous avons identifiés en France mais aussi à l’international. Aussi, dans une logique de convergence entre les ressources existantes, nous avons pris soin de reprendre des nomenclatures déjà utilisées par nos partenaires, à l’instar des critères d’identification des thèmes de cas d’usages notamment. 
+Pour nourrir ce travail, nous avons croisé plusieurs travaux réglementaires mais aussi de recensement de projets d’IA territoriales que nous avons identifiés en France mais aussi à l’international. Aussi, dans une logique de convergence entre les ressources existantes, nous avons pris soin de reprendre des nomenclatures déjà utilisées par nos Partenaires, à l’instar des critères d’identification des thèmes de cas d’usages notamment. 
 
 Les cas d’usages documentés s’articulent autour de 6 thématiques principales. 
 

@@ -1,162 +1,69 @@
 {
   "fields": [
     {
-      "name": "coll_nom"
+      "name": "Nom_collectivite"
     },
     {
-      "name": "nom_projet"
+      "name": "Nom_du_projet"
     },
     {
-      "name": "coll_siret"
+      "name": "SIRET"
     },
     {
-      "name": "latitude"
+      "name": "Latitude"
     },
     {
-      "name": "longitude"
+      "name": "Longitude"
     },
     {
-      "name": "coll_type",
+      "name": "Type_de_collectivite",
       "subtype": "tag",
       "bgColor": "#00adb8"
     },
     {
-      "name": "projet_date"
+      "name": "Date_de_demarrage"
     },
     {
-      "name": "projet_status",
+      "name": "Statut_du_projet",
       "subtype": "tag",
       "bgColor": "#00adb8"
     },
     {
-      "name": "status_abandon"
-    },
-    {
-      "name": "partenaires",
+      "name": "Partenaires",
       "subtype": "tags",
       "bgColor": "#00adb8",
       "separator": "-"
     },
     {
-      "name": "projet_contact",
-      "subtype": "email"
+      "name": "Description_service"
     },
     {
-      "name": "usage_service"
-    },
-    {
-      "name": "financement"
-    },
-    {
-      "name": "budget",
+      "name": "Theme",
       "subtype": "tag",
       "bgColor": "#00adb8"
     },
     {
-      "name": "usage_description"
-    },
-    {
-      "name": "mise_en_oeuvre",
-      "subtype": "tag",
-      "bgColor": "#00adb8"
-    },
-    {
-      "name": "theme",
-      "subtype": "tag",
-      "bgColor": "#00adb8"
-    },
-    {
-      "name": "sous_theme",
-      "subtype": "tags",
-      "bgColor": "#00adb8",
-      "separator": "-"
-    },
-
-    {
-      "name": "audience_service",
+      "name": "Sous_Theme",
       "subtype": "tags",
       "bgColor": "#00adb8",
       "separator": "-"
     },
     {
-      "name": "herbergement",
-      "subtype": "tag",
-      "bgColor": "#00adb8"
-    },
-    {
-      "name": "nom_algorithme"
-    },
-    {
-      "name": "algorithme_description"
-    },
-    {
-      "name": "algorithme_operations"
-    },
-    {
-      "name": "type_algorithme",
+      "name": "Audience",
       "subtype": "tags",
       "bgColor": "#00adb8",
       "separator": "-"
     },
     {
-      "name": "impact_environnement"
-    },
-    {
-      "name": "donnees_source",
-      "subtype": "tags",
-      "bgColor": "#00adb8",
-      "separator": "-"
-    },
-    {
-      "name": "donnees_acces",
-      "subtype": "tags",
-      "bgColor": "#00adb8",
-      "separator": "-"
-    },
-    {
-      "name": "risque"
-    },
-    {
-      "name": "risque_categorie",
-      "subtype": "tag",
-      "bgColor": "#00adb8"
-    },
-    {
-      "name": "proportionalite"
-    },
-    {
-      "name": "decision"
-    },
-    {
-      "name": "erreur",
-      "subtype": "tag",
-      "bgColor": "#00adb8"
-    },
-    {
-      "name": "explicabilite",
-      "subtype": "tag",
-      "bgColor": "#00adb8"
-    },
-    {
-      "name": "reversibilite"
-    },
-    {
-      "name": "objection"
-    },
-    {
-      "name" : "url_infos",
+      "name": "URL_Service",
       "subtype": "link"
     },
     {
-      "name" : "url_ressources",
-      "subtype": "link"
-    },
-    {
-      "name" : "image_url",
+      "name": "URL_Logo",
       "subtype": "image"
     },
     {
-      "name": "date"
+      "name": "Date_de_derniere_mise_a_jour"
     }
   ]
 }
