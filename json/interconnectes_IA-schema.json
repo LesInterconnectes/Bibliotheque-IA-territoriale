@@ -1,7 +1,7 @@
 {
   "fields": [
     {
-      "name": "coll_nom",
+      "name": "Nom_collectivite",
       "title": "Porteur",
       "description": "Nom de la collectivité ou de l'organisation porteuse du projet",
       "type": "string",
@@ -10,7 +10,7 @@
       }
     },
     {
-      "name": "nom_projet",
+      "name": "Nom_du_projet",
       "title": "Projet",
       "description": "Nom du projet ou du service déployé",
       "type": "string",
@@ -19,7 +19,7 @@
       }
     },
     {
-      "name": "coll_siret",
+      "name": "SIRET",
       "title": "Identifiant SIRET de la collectivité",
       "description": "Identifiant du Système d’Identification du Répertoire des Etablissements (SIRET) de la collectivité qui a adopté la délibération, composé de 9 chiffres SIREN + 5 chiffres NIC d’un seul tenant",
       "type": "string",
@@ -28,19 +28,19 @@
       }
     },
     {
-      "name": "latitude",
+      "name": "Latitude",
       "title": "Latitude",
       "description": "Latitude",
       "type": "number"
     },
     {
-      "name": "longitude",
+      "name": "Longitude",
       "title": "Longitude",
       "description": "Longitude",
       "type": "number"
     },
     {
-      "name": "coll_type",
+      "name": "Type_de_collectivite",
       "title": "Type de collectivité",
       "description": "Commune, EPCI, département, région, syndicat mixte, opérateur",
       "type": "string",
@@ -57,16 +57,16 @@
       }
     },
     {
-      "name": "projet_date",
-      "title": "Date de démarrage du projet",
-      "description": "Date de démarrage du projet (JJ/MM/AAAA) ou (MM/AAAA)",
+      "name": "Date_de_demarrage",
+      "title": "Date_de_derniere_mise_a_jour de démarrage du projet",
+      "description": "Date_de_derniere_mise_a_jour de démarrage du projet (JJ/MM/AAAA) ou (MM/AAAA)",
       "type": "string",
       "constraints": {
         "required": true
       }
     },
     {
-      "name": "projet_status",
+      "name": "Statut_du_projet",
       "title": "Maturité",
       "description": "Sélectionner un item : en réflexion, en construction, POC, en déploiement, terminée, abandonné",
       "type": "string",
@@ -75,7 +75,7 @@
         "enum": [
           "En expérimentation",
           "En déploiement",
-          "Terminée", 
+          "Terminée",
           "Abandonné"
         ]
       }
@@ -87,9 +87,9 @@
       "type": "string"
     },
     {
-      "name": "partenaires",
+      "name": "Partenaires",
       "title": "Partenaires associés",
-      "description": "Liste des autres partenaires académiques, experts, techniques, financeurs associés",
+      "description": "Liste des autres Partenaires académiques, experts, techniques, financeurs associés",
       "type": "string",
       "constraints": {
         "required": false
@@ -115,16 +115,16 @@
       "title" : "Budget",
       "description" : "/an : moins de 50k€ , de 50k€ à 100k€,  plus de 100k€",
       "type" : "string",
-      "constraints" : { 
-        "enum" : [ 
-          "moins de 50k€" , 
-          "de 50k€ à 100k€", 
+      "constraints" : {
+        "enum" : [
+          "moins de 50k€" ,
+          "de 50k€ à 100k€",
           "plus de 100k€"
         ]
       }
     },
     {
-      "name": "usage_description",
+      "name": "Description_service",
       "title": "Description gobale du service et de ses usages",
       "description": "A quoi sert ce service ? Quels bénéfices attendus ? ",
       "type": "string",
@@ -137,27 +137,27 @@
       "title" : "Développement et mise en œuvre",
       "description" : "Projet développé en interne, projet développé en externe, mobilisation de prestataire(s), marché public",
       "type" : "string",
-      "constraints" : { 
+      "constraints" : {
         "required" : true,
         "enum" : [
           "Projet développé en interne",
           "projet développé en externe",
-          "mobilisation de prestataire(s)", 
+          "mobilisation de prestataire(s)",
           "marché public"
         ]
       }
     },
     {
-      "name" : "theme",
+      "name" : "Theme",
       "title" : "Thème principal ",
       "description" : "quelle grande politique publique est adressée par ce cas d'usages (voir thèmes feuille2)",
       "type" : "string",
-      "constraints" : { 
+      "constraints" : {
         "required" : true,
-        "enum" : [ 
+        "enum" : [
           "Transition écologique",
           "Attractivité et développement",
-          "Citoyenneté", 
+          "Citoyenneté",
           "Santé et solidarité",
           "Mobilité",
           "Gouvernance et socles technologiques",
@@ -166,7 +166,7 @@
       }
     },
     {
-      "name": "sous_theme",
+      "name": "Sous_Theme",
       "title": "Sous-thèmes de politique publique visée",
       "description": "sélectionner un ou deux items dans la liste proposée (voir sous-thèmes BDT)",
       "type": "string",
@@ -186,21 +186,21 @@
       }
     },
     {
-      "name": "audience_service",
+      "name": "Audience",
       "title": "Audience du service",
       "description": "grand public, bénéficiaire, agent, association, élu, entreprises, collectivités, établissement scolaire, établissement santé",
       "type": "string",
       "constraints": {
         "required": true,
         "enum": [
-          "Grand public", 
-          "Bénéficiaire", 
-          "Agent", 
-          "Association", 
-          "Elu", 
-          "Entreprises", 
-          "Collectivités", 
-          "Etablissement scolaire", 
+          "Grand public",
+          "Bénéficiaire",
+          "Agent",
+          "Association",
+          "Elu",
+          "Entreprises",
+          "Collectivités",
+          "Etablissement scolaire",
           "Etablissement santé"
         ]
       }
@@ -213,8 +213,8 @@
       "constraints": {
         "required": true,
         "enum": [
-          "cloud chez un tiers", 
-          "en interne de l'administration", 
+          "cloud chez un tiers",
+          "en interne de l'administration",
           "NSP"
         ]
       }
@@ -251,11 +251,11 @@
       "constraints": {
         "required": true,
         "enum": [
-          "Machine Learning", 
-          "Traitement Automatique du langage", 
-          "IA générative", 
-          "Computer vision", 
-          "Réseaux de neurones", 
+          "Machine Learning",
+          "Traitement Automatique du langage",
+          "IA générative",
+          "Computer vision",
+          "Réseaux de neurones",
           "NSP"
         ]
       }
@@ -271,15 +271,15 @@
       "title" : "Source des données",
       "description" : "Qui fournit les données nécessaires à l'entraîment et à l'utilisation du modèle (l’usager, jeu de données interne, open data, données d'un tiers , NSP) ?",
       "type" : "string",
-      "constraints" : { 
+      "constraints" : {
         "required" : true,
-        "enum" : [ 
-          "usager", 
-          "jeu de données interne", 
-          "open data", 
-          "données d'un tiers", 
+        "enum" : [
+          "usager",
+          "jeu de données interne",
+          "open data",
+          "données d'un tiers",
           "NSP"
-        ] 
+        ]
       }
     },
     {
@@ -290,9 +290,9 @@
       "constraints": {
         "required": true,
         "enum": [
-          "par API", 
-          "automatisée", 
-          "par récupération manuelle", 
+          "par API",
+          "automatisée",
+          "par récupération manuelle",
           "NSP"
         ]
       }
@@ -335,12 +335,12 @@
       "title" : "Efficacité du système d'IA",
       "description" : "Ecart entre les objectifs attendus et les résultats du système d’IA - (faible) le système d’IA répond bien aux objectifs attendus - (moyen) le système d’IA répond partiellement aux objectifs attendus - (fort) le système d’IA ne répond pas aux objectifs attendus",
       "type" : "string",
-      "constraints" : { 
-        "enum" : [ 
-          "faible", 
-          "moyen", 
+      "constraints" : {
+        "enum" : [
+          "faible",
+          "moyen",
           "fort"
-        ] 
+        ]
       }
     },
     {
@@ -348,12 +348,12 @@
       "title" : "Niveau d’explicabilité de l’algorithme",
       "description" : "1- (faible) Facilement explicable au public - (moyen) Explicable mais complexe - (fort) Non explicable au public ",
       "type" : "string",
-      "constraints" : { 
-        "enum" : [ 
-          "faible", 
-          "moyen", 
+      "constraints" : {
+        "enum" : [
+          "faible",
+          "moyen",
           "fort"
-        ] 
+        ]
       }
     },
     {
@@ -369,7 +369,7 @@
       "type": "string"
     },
     {
-      "name" : "url_infos",
+      "name" : "URL_Service",
       "title" : "URL information",
       "description" : "Insérer un lien vers le projet (information ou accès au service)",
       "type" : "string"
@@ -381,18 +381,18 @@
       "type" : "string"
     },
     {
-      "name" : "image_url",
+      "name" : "URL_Logo",
       "title" : "image",
       "description" : "Insérer le logo de la collectivité porteuse du projet",
       "type" : "string",
-      "constraints" : { 
+      "constraints" : {
         "required" : true
       }
     },
     {
-      "name": "date",
-      "title": "Date de mise à jour des informations",
-      "description": "date de mise à jour des informations (JJ/MM/AAAA)",
+      "name": "Date_de_derniere_mise_a_jour",
+      "title": "Date_de_derniere_mise_a_jour de mise à jour des informations",
+      "description": "Date_de_derniere_mise_a_jour de mise à jour des informations (JJ/MM/AAAA)",
       "type": "string",
       "constraints": {
         "required": true

@@ -11,8 +11,8 @@
     "useMarkerCluster" : true,
 
     "item_geo_fields"   : {
-      "latitude" : "latitude",
-      "longitude": "longitude"
+      "latitude" : "Latitude",
+      "longitude": "Longitude"
     },
 
     "item_marker"       : "map-marker",
@@ -48,8 +48,8 @@
         "popup_config"        : {
           "action" : "mousemove",
           "fields_settings": {
-            "nom_projet" : { "position": "main_title", "prefix" : null, "suffix" : null, "class": "is-size-6 has-text-weight-semibold" },
-            "coll_nom" : { "position": "value", "prefix" : "Collectivité : ", "suffix" : null, "class": "is-size-7" },
+            "Nom_du_projet" : { "position": "main_title", "prefix" : null, "suffix" : null, "class": "is-size-6 has-text-weight-semibold" },
+            "Nom_collectivite" : { "position": "value", "prefix" : "Collectivité : ", "suffix" : null, "class": "is-size-7" },
             "_datami_" : { "position": "info",       "prefix" : "(cliquez pour + d'infos)", "suffix" : null, "class": "has-text-centered has-text-weight-light" }
           }
         },
@@ -61,12 +61,12 @@
 
         "circle_color": [
           "match",
-          ["get", "theme"],
+          ["get", "Theme"],
           "Transition écologique",
           "#01a755",
           "Attractivité et développement",
           "#9a42c9",
-          "Citoyenneté", 
+          "Citoyenneté",
           "#b5d250",
           "Santé et solidarité",
           "#f75ad6",
@@ -81,12 +81,12 @@
         ],
         "circle_color_activated": [
           "match",
-          ["get", "theme"],
+          ["get", "Theme"],
           "Transition écologique",
           "#01a755",
           "Attractivité et développement",
           "#9a42c9",
-          "Citoyenneté", 
+          "Citoyenneté",
           "#b5d250",
           "Santé et solidarité",
           "#f75ad6",
@@ -170,7 +170,7 @@
 
         "_COMMENT_SOURCES": "### list of choropleth sources",
         "sources" : [
-          
+
           { "_COMMENT": "### FR - departement",
             "is_activated" : true,
             "source_id" : "chorosource-departement",
@@ -179,19 +179,19 @@
             "max_zoom" : 9,
             "min_zoom" : 0,
 
-            "source_url" : "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements-version-simplifiee.geojson", 
+            "source_url" : "https://raw.githubusercontent.com/gregoiredavid/france-geojson/master/departements-version-simplifiee.geojson",
 
             "update_src_from_previous_layer" : false,
 
             "need_aggregation" : false,
             "polygon_prop_id" : "code",
             "join_polygon_id_to_field"  : "DEP_CODE",
-            "agregated_data_field"      : "coll_nom",
+            "agregated_data_field"      : "Nom_collectivite",
             "fill_color": "#fff",
             "fill_opacity"        : 0.1,
             "fill_outline_color"  : "#004494",
 
-            "has_popup" : false, 
+            "has_popup" : false,
             "popup_config" : {
               "action" : "mousemove",
               "fields_settings": {
@@ -205,31 +205,31 @@
               "title" : "Légende",
               "useSymbols" : true,
               "scales" : [
-                { 
+                {
                   "value": "Transition écologique",
                   "color": "#01a755"
                 },
-                { 
+                {
                   "value": "Attractivité et développement",
                   "color": "#9a42c9"
                 },
-                { 
-                  "value": "Citoyenneté", 
+                {
+                  "value": "Citoyenneté",
                   "color": "#b5d250"
                 },
-                { 
+                {
                   "value": "Santé et solidarité",
                   "color": "#f75ad6"
                 },
-                { 
+                {
                   "value": "Mobilité",
                   "color": "#ff834e"
                 },
-                { 
+                {
                   "value": "Gouvernance et socles technologiques",
                   "color": "#6992ff"
                 },
-                { 
+                {
                   "value": "Administration et organisation interne",
                   "color": "#5b7f28"
                 }
@@ -262,12 +262,12 @@
       "layers_switches" : [
         { "label": "Projets",
           "layers" : ["all-points"],
-          "default_visible" : true 
+          "default_visible" : true
         },
         {
           "label" : "departements",
-          "layers" : [ "chorolayer-departements" ], 
-          "default_visible" : true 
+          "layers" : [ "chorolayer-departements" ],
+          "default_visible" : true
         },
         {
           "label" : "Clusters",
