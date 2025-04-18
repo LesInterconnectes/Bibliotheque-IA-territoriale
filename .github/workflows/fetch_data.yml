@@ -1,6 +1,8 @@
 name: Fetch Grist CSV and Commit
 
 on:
+  schedule:
+    - cron: '*/30 * * * *' # Every 30 minutes
   workflow_dispatch: # Manually triggered
 
 permissions:
