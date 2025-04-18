@@ -14,7 +14,7 @@
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
       Please enable it to continue.</strong>
   </noscript>
-  
+
   <div class="has-text-dark">
 
     <div style="background-color: white; margin: 1em;">
@@ -55,38 +55,38 @@
             "activate": true,
             "localdev": false,
             "DEPRECATED_gitfilelocal": "http://localhost:8811/statics/csv/202411-bibIA-testBDD.csv",
-            "gitfilelocal": "http://localhost:8811/statics/csv/processed_data.csv",
+            "gitfilelocal": "http://localhost:8811/statics/csv/data.csv",
             "DEPRECATED_gitfile": "https://github.com/LesInterconnectes/Bibliotheque-IA-territoriale/blob/main/csv/202411-bibIA-testBDD.csv",
             "DEPRECATED_BIS_gitfile": "https://github.com/LesInterconnectes/Bibliotheque-IA-territoriale/blob/main/csv/bdd-beta-bibIA-2025-01-13.csv",
-            "gitfile": "https://github.com/LesInterconnectes/Bibliotheque-IA-territoriale/blob/main/csv/processed_data.csv",
-            "default-tab": true, 
+            "gitfile": "https://github.com/LesInterconnectes/Bibliotheque-IA-territoriale/blob/main/csv/data.csv",
+            "default-tab": true,
             "options": {
               "height": "600px",
-              "separator": ";",
+              "separator": ",",
               "lockcolumns": true,
               "customfilters": {
                 "activate": true,
                 "filterfields": [
                   {
-                    "name": "coll_type",
+                    "name": "Type_de_collectivite",
                     "filtering": "OR"
                   },
                   {
-                    "name": "theme",
+                    "name": "Theme",
                     "filtering": "OR"
                   },
                   {
-                    "name": "sous_theme",
+                    "name": "Sous_Theme",
                     "filtering": "OR"
                   },
                   {
-                    "name": "audience_service",
+                    "name": "Audience",
                     "filtering": "OR"
                   }
                 ]
               },
               "schema": {
-                "localdev": false, 
+                "localdev": false,
                 "filelocal": "http://localhost:8811/statics/json/interconnectes_IA-schema.json",
                 "file": "https://github.com/LesInterconnectes/Bibliotheque-IA-territoriale/blob/main/json/interconnectes_IA-schema.json"
               },
@@ -105,7 +105,7 @@
                 "activate": true,
                 "sortfields": [
                   {
-                    "name": "nom_projet",
+                    "name": "Nom_du_projet",
                     "ascending": false,
                     "random": false
                   }
@@ -118,151 +118,87 @@
               "cardsdetail": true,
               "cardssettings": {
                 "mini": {
-                  "image_url": {
+                  "URL_Logo": {
                     "position": "image"
                   },
-                  "nom_projet": {
+                  "Nom_du_projet": {
                     "position": "title"
                   },
-                  "coll_nom": {
+                  "Nom_collectivite": {
                     "position": "adress"
                   },
-                  "algorithme_description": {
-                    "position": "resume"
-                  },
-                  "usage_description": {
+                  "Description_service": {
                     "position": "infos"
                   },
-                  "coll_type": {
+                  "Type_de_collectivite": {
                     "position": "tags",
                     "prefix": "Type de collectivité",
                     "right": true
                   },
-                  "theme": {
+                  "Theme": {
                     "position": "tags",
                     "prefix": "Politique publique visée"
                   },
-                  "audience_service": {
+                  "Audience": {
                     "position": "tags",
                     "prefix": "Audience du service"
                   },
-                  "risque_categorie": {
-                    "position": "tags",
-                    "prefix": "Type de risque"
-                  }
                 },
                 "detail": {
-                  "image_url": {
+                  "URL_Logo": {
                     "position": "image"
                   },
-                  "nom_projet": {
+                  "Nom_du_projet": {
                     "position": "title"
                   },
-                  "coll_nom": {
+                  "Nom_collectivite": {
                     "position": "adress",
                     "prefix": "Porteur: "
                   },
-                  "coll_siret": {
+                  "SIRET": {
                     "position": "adress",
-                    "prefix": "SIREN: "
+                    "prefix": "SIRET: "
                   },
-                  "usage_description": {
+                  "Description_service": {
                     "position": "subtitle"
                   },
-                  "algorithme_description": {
-                    "position": "resume",
-                    "block_title": "Description"
-                  },
-                  "projet_contact": {
-                    "position": "links",
-                    "block_title": "Contact"
-                  },
-                  "url_infos": {
+                  "URL_Service": {
                     "position": "links",
                     "block_title": "Infos"
                   },
-                  "url_ressources": {
-                    "position": "links",
-                    "block_title": "Ressources"
-                  },
-                  "partenaires": {
+                  "Partenaires": {
                     "position": "resume",
                     "block_title": "Partenaires"
                   },
-                  "theme": {
+                  "Theme": {
                     "position": "tags_middle",
                     "block_title": "Politique publique visée",
                     "right": true
                   },
-                  "sous_theme": {
+                  "Sous_Theme": {
                     "position": "tags_middle",
                     "block_title": "Sous-thèmes de politique publique visée",
                     "right": true
                   },
-                  "projet_status": {
+                  "Statut_du_projet": {
                     "position": "tags",
                     "block_title":  "Maturité",
                     "right": true
                   },
-                  "usage_description": {
+                  "Description_service": {
                     "position": "infos",
                     "block_title": "Description globale du service et de ses usages"
                   },
-                  "coll_type": {
+                  "Type_de_collectivite": {
                     "position": "tags_top",
                     "block_title": "Type de collectivité",
                     "right": true
                   },
-                  "audience_service": {
+                  "Audience": {
                     "position": "tags_top",
                     "block_title": "Audience du service",
                     "right": true
                   },
-                  "risque": {
-                    "position": "resume",
-                    "block_title": "Risques",
-                    "right": true
-                  },
-                  "proportionalite": {
-                    "position": "resume",
-                    "block_title":"Proportionnalité",
-                    "right": true
-                  },
-                  "decision": {
-                    "position": "resume",
-                    "block_title": "Portée de la décision",
-                    "right": true
-                  },
-                  "reversibilite": {
-                    "position": "infos",
-                    "block_title": "Réversibilité des traitements et des services",
-                    "right": true
-                  },
-                  "herbergement": {
-                    "position": "infos",
-                    "block_title": "Hébergement du service",
-                    "right": true
-                  },
-                  "donnees_source": {
-                    "position": "infos",
-                    "block_title": "Source des données",
-                    "right": true
-                  },
-                  "objection": {
-                    "position": "infos",
-                    "block_title": "Procédure d&#39objection",
-                    "right": true
-                  },
-                  "risque_categorie": {
-                    "position": "tags",
-                    "block_title": "Type de risque",
-                    "right": true
-                  },
-                  "type_algorithme": {
-                    "position": "tags",
-                    "block_title": "Type d&#39algorithme",
-                    "right": true
-                  }
                 },
                 "minimap": {
                   "activate": true,
@@ -272,8 +208,8 @@
                     "maxZoom": 18,
                     "minZoom": 2,
                     "item_geo_fields": {
-                      "latitude": "latitude",
-                      "longitude": "longitude"
+                      "latitude": "Latitude",
+                      "longitude": "Longitude"
                     },
                     "zoom_item": 13,
                     "marker_icon": "map-marker",
