@@ -218,7 +218,7 @@
               "useSymbols": true,
               "scales": [
                 {
-                  "value": "Transition écologique",
+                  "value": "Transition écologique et énergétique",
                   "color": "#01a755"
                 },
                 {
@@ -226,15 +226,11 @@
                   "color": "#9a42c9"
                 },
                 {
-                  "value": "Citoyenneté",
+                  "value": "Citoyenneté, santé et solidarité",
                   "color": "#b5d250"
                 },
                 {
-                  "value": "Santé et solidarité",
-                  "color": "#f75ad6"
-                },
-                {
-                  "value": "Mobilité",
+                  "value": "Mobilités",
                   "color": "#ff834e"
                 },
                 {
