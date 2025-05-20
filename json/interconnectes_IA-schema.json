@@ -155,11 +155,10 @@
       "constraints": {
         "required": true,
         "enum": [
-          "Transition écologique",
+          "Transition écologique et énergétique",
           "Attractivité et développement",
-          "Citoyenneté",
-          "Santé et solidarité",
-          "Mobilité",
+          "Citoyenneté, santé et solidarité",
+          "Mobilités",
           "Gouvernance et socles technologiques",
           "Administration et organisation interne"
         ]
