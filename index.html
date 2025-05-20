@@ -215,24 +215,173 @@
                     "marker_color": "#4a4a4a"
                   }
                 }
-              },
-              "mapview": {
-                "activate": true,
-                "default": false,
-                "maps": [
-                  {
-                    "title": {
-                      "fr": "CARTOGRAPHIE"
-                    },
-                    "cols": 12,
-                    "localdev": false,
-                    "filelocal": "http://localhost:8811/statics/json/interconnectes_IA-map_settings.json",
-                    "file": "https://github.com/LesInterconnectes/Bibliotheque-IA-territoriale/blob/main/json/interconnectes_IA-map_settings.json"
-                  }
-                ]
               }
-            },
-            "usertoken": ""
+            }
+          },
+          {
+              "title": "Cartographie",
+              "onlypreview": true,
+              "activate": true,
+              "localdev": false,
+              "gitfilelocal": "http://localhost:8811/statics/csv/data.csv",
+              "gitfile": "https://github.com/LesInterconnectes/Bibliotheque-IA-territoriale/blob/main/csv/data.csv",
+              "default-tab": false,
+              "options": {
+                  "height": "600px",
+                  "separator": ",",
+                  "lockcolumns": true,
+                  "customfilters": {
+                      "activate": true,
+                      "filterfields": [
+                          {
+                              "name": "Type_de_collectivite",
+                              "filtering": "OR"
+                          },
+                          {
+                              "name": "Theme",
+                              "filtering": "OR"
+                          },
+                          {
+                              "name": "Sous_Theme",
+                              "filtering": "OR"
+                          },
+                          {
+                              "name": "Audience",
+                              "filtering": "OR"
+                          }
+                      ]
+                  },
+                  "schema": {
+                      "localdev": false,
+                      "filelocal": "http://localhost:8811/statics/json/interconnectes_IA-schema.json",
+                      "file": "https://github.com/LesInterconnectes/Bibliotheque-IA-territoriale/blob/main/json/interconnectes_IA-schema.json"
+                  },
+                  "fields-custom-properties": {
+                      "localdev": false,
+                      "filelocal": "http://localhost:8811/statics/json/interconnectes_IA-fields-custom-props.json",
+                      "file": "https://github.com/LesInterconnectes/Bibliotheque-IA-territoriale/blob/main/json/interconnectes_IA-fields-custom-props.json"
+                  },
+                  "cardsdetail": true,
+                  "cardssettings": {
+                    "mini": {
+                      "URL_Logo": {
+                        "position": "image"
+                      },
+                      "Nom_du_projet": {
+                        "position": "title"
+                      },
+                      "Nom_collectivite": {
+                        "position": "adress"
+                      },
+                      "Description_service": {
+                        "position": "infos"
+                      },
+                      "Type_de_collectivite": {
+                        "position": "tags",
+                        "prefix": "Type de collectivité",
+                        "right": true
+                      },
+                      "Theme": {
+                        "position": "tags",
+                        "prefix": "Politique publique visée"
+                      },
+                      "Audience": {
+                        "position": "tags",
+                        "prefix": "Audience du service"
+                      }
+                    },
+                    "detail": {
+                      "URL_Logo": {
+                        "position": "image"
+                      },
+                      "Nom_du_projet": {
+                        "position": "title"
+                      },
+                      "Nom_collectivite": {
+                        "position": "adress",
+                        "prefix": "Porteur: "
+                      },
+                      "SIRET": {
+                        "position": "adress",
+                        "prefix": "SIRET: "
+                      },
+                      "Description_service": {
+                        "position": "subtitle"
+                      },
+                      "URL_Service": {
+                        "position": "links",
+                        "block_title": "Infos"
+                      },
+                      "Partenaires": {
+                        "position": "resume",
+                        "block_title": "Partenaires"
+                      },
+                      "Theme": {
+                        "position": "tags_middle",
+                        "block_title": "Politique publique visée",
+                        "right": true
+                      },
+                      "Sous_Theme": {
+                        "position": "tags_middle",
+                        "block_title": "Sous-thèmes de politique publique visée",
+                        "right": true
+                      },
+                      "Statut_du_projet": {
+                        "position": "tags",
+                        "block_title":  "Maturité",
+                        "right": true
+                      },
+                      "Description_service": {
+                        "position": "infos",
+                        "block_title": "Description globale du service et de ses usages"
+                      },
+                      "Type_de_collectivite": {
+                        "position": "tags_top",
+                        "block_title": "Type de collectivité",
+                        "right": true
+                      },
+                      "Audience": {
+                        "position": "tags_top",
+                        "block_title": "Audience du service",
+                        "right": true
+                      }
+                    },
+                    "minimap": {
+                      "activate": true,
+                      "right_side": true,
+                      "mapOptions": {
+                        "zoom": 5,
+                        "maxZoom": 18,
+                        "minZoom": 2,
+                        "item_geo_fields": {
+                          "latitude": "Latitude",
+                          "longitude": "Longitude"
+                        },
+                        "zoom_item": 13,
+                        "marker_icon": "map-marker",
+                        "marker_height": 45,
+                        "marker_width": 45,
+                        "marker_color": "#4a4a4a"
+                      }
+                    }
+                  },
+
+                  "mapview": {
+                      "activate": true,
+                      "default": true,
+                      "maps": [
+                          {
+                              "title": {
+                              "fr": "CARTOGRAPHIE"
+                          },
+                          "cols": 12,
+                          "localdev": false,
+                          "filelocal": "http://localhost:8811/statics/json/interconnectes_IA-map_settings.json",
+                          "file": "https://github.com/LesInterconnectes/Bibliotheque-IA-territoriale/blob/main/json/interconnectes_IA-map_settings.json"
+                          }
+                      ]
+                  }
+              }
           }
         ]'
         locale="fr"
