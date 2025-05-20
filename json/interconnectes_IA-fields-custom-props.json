@@ -46,7 +46,7 @@
       "name": "Sous_Theme",
       "subtype": "tags",
       "bgColor": "#00adb8",
-      "separator": "-"
+      "separator": ","
     },
     {
       "name": "Audience",
